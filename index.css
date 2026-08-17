@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #000;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+html,
+body {
+  position: fixed;
+  inset: 0;
+}
+
+* {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+canvas {
+  display: block;
+  touch-action: none;
+}
+
+button {
+  touch-action: manipulation;
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  body {
+    min-height: 100dvh;
+  }
+}
